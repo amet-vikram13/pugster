@@ -1,0 +1,89 @@
+#pugster {
+  font-family: "Bangers", cursive;
+  font-size: 3rem;
+  color: #624a2e;
+  margin: 0 5px;
+}
+#pugsterLogo {
+  height: 70px;
+  width: 80px;
+}
+.navbar-burger {
+  align-self: center;
+}
+#loginBtn {
+  background: tomato;
+  color: white;
+  border: transparent;
+}
+#loginBtn:hover {
+  background: transparent;
+  color: red;
+  border: 1px solid red;
+}
+#signUpHeader {
+  height: 160px;
+  background: hsl(0, 0%, 96%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#headerImage {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+#headerTitle {
+  font-size: 2em;
+  font-family: "Bangers", cursive;
+  color: #624a2e;
+  position: relative;
+  top: -10px;
+}
+#headerSubTitle {
+  font-size: 1.5em;
+  font-family: "Bangers", cursive;
+  color: #624a2e;
+}
+#signUpCard {
+  width: 40%;
+  padding: 0;
+  margin: 50px auto;
+  border: 1px solid #eee;
+  box-shadow: 2px 2px #eee;
+}
+#signUpFormContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.field {
+  margin: 20px;
+  width: 80%;
+}
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #624a2e; /* Blue */
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 767px) {
+  #signUpCard {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #signUpCard {
+    width: 90%;
+  }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pugster</title>
+  <link href="/css/style.css" rel="stylesheet" type="text/css">
+  <link href="/css/app.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+</head>
+
+<body>
+  <div id="signUpHeader">
+    <div id="headerImage">
+      <a href="/"><img src="/images/pugster.png" height="70" width="70"></a>
+    </div>
+    <div id="headerTitle">
+      <h1>Pugster</h1>
+    </div>
+    <div id="headerSubTitle">
+      <h2>Signup</h2>
+    </div>
+  </div>
+
+
+  <form action="/users" method="POST">
+    <div id="signUpCard" class="card">
+      <div class="card-content" id="signUpFormContent">
+        <div class="field ">
+          <p class="control has-icons-left">
+            <input class="input" type="text" name="name" placeholder="First and Last Name">
+            <span class="icon is-left">
+              <i class="fas fa-user"></i>
+            </span>
+          </p>
+        </div>
+        <div class="field">
+          <p class="control has-icons-left">
+            <input class="input" type="email" name="email" placeholder="BITS Mail">
+            <span class="icon is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </p>
+        </div>
+        <div class="field ">
+          <p class="control has-icons-left">
+            <input class="input" type="password" name="password" placeholder="Password">
+            <span class="icon is-left">
+              <i class="fas fa-lock"></i>
+            </span>
+          </p>
+        </div>
+        <div class="field is-grouped is-grouped-centered">
+          <p class="control">
+            <button class="button is-outlined is-rounded" id="loginBtn" type="submit">
+              Sign Up
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <% include ./partials/footer.ejs %>

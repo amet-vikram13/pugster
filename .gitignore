@@ -1,0 +1,6 @@
+node_modules/
+public/css/main.scss
+public/css/.sass-cache/
+config/config.json
+public/scss/
+public/.sass-cache/
